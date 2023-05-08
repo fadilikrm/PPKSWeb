@@ -3,6 +3,7 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaTelegram, FaWhatsapp } from 'react-icons/fa';
 
+
 // images
 import Image from "next/image";
 import p4 from "../public/p4.png";
@@ -17,11 +18,6 @@ import { useState} from "react";
 export default function Home() {
   // functions
   const [darkmode, setdarkmode] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const Navbar = () => {
-  function toggleDropdown() {
-      setDropdownOpen(!dropdownOpen);
-    }
   return (
     <div className={darkmode ? "dark" : ""}>
       <div>
@@ -32,33 +28,21 @@ export default function Home() {
         @import url(&apos;https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap&apos;);
         </style>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
       </Head>
       <nav className="py-4 px-6 mb-8 flex flex-col justify-between fixed w-full bg-transparent md:flex-row md:justify-between md:items-center">
-      <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
-        <li>
-          <BsFillMoonStarsFill
-            className="cursor-pointer text-xl text-green-400"
-            onClick={() => setdarkmode(!darkmode)}
-          />
-        </li>
-        <li className="text-green-400"><a href="#dashboard-ppks">Dashboard</a></li>
-        <li className="text-green-400"><a href="#chatbot-ppks">ChatBot</a></li>
-        <li className="text-green-400 relative">
-          <a href="#about-ppks" onClick={toggleDropdown}>
-            Dasar Hukum
-          </a>
-          {dropdownOpen && (
-            <ul className="absolute left-0 mt-2 py-2 px-4 bg-white text-green-400 rounded-md shadow-md">
-              <li><a href="#about-ppks-sub1">Submenu 1</a></li>
-              <li><a href="#about-ppks-sub2">Submenu 2</a></li>
-              <li><a href="#about-ppks-sub3">Submenu 3</a></li>
-            </ul>
-          )}
-        </li>
-        <li className="text-green-400"><a href="#news-ppks">Berita Terkait</a></li>
-      </ul>
-    </nav>
+        <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
+          <li>
+            <BsFillMoonStarsFill
+              className="cursor-pointer text-xl text-green-400"
+              onClick={() => setdarkmode(!darkmode)}
+            />
+          </li>
+          <li className="text-green-400"><a href="#dashboard-ppks">Dashboard</a></li>
+          <li className="text-green-400"><a href="#chatbot-ppks">ChatBot</a></li>
+          <li className="text-green-400"><a href="#about-ppks">Dasar Hukum</a></li>
+          <li className="text-green-400"><a href="#news-ppks">Berita Terkait</a></li>
+        </ul>
+      </nav>
       <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
         <section className="min-h-screen">
           <div className="text-center p-10 " id="dashboard-ppks">
@@ -208,5 +192,4 @@ export default function Home() {
     </div>
     </div>
   );
-  }
 }
