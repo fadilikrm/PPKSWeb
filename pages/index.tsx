@@ -28,11 +28,8 @@ export default function Home() {
         </style>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
-        <section className="min-h-screen">
-        <nav className="py-10 mb-12 flex justify-between fixed">
-          <ul className="flex items-center">
+      <nav className="py-10 mb-12 flex justify-between fixed font-poppins bg-transparent px-10 md:px -20 lg:px-40 dark:bg-black">
+          <ul className="flex items-center space-x-4">
             <li>
               <BsFillMoonStarsFill
                 className="cursor-pointer text-xl mx-5 text-green-400"
@@ -43,9 +40,10 @@ export default function Home() {
             <li className="text-green-400 ml-4"><a href="#chatbot-ppks">ChatBot</a></li>
             <li className="text-green-400 ml-4"><a href="#about-ppks">Dasar Hukum</a></li>
             <li className="text-green-400 ml-4"><a href="#news-ppks">Berita Terkait</a></li>
-            
           </ul>
         </nav>
+      <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
+        <section className="min-h-screen">
           <div className="text-center p-10 " id="dashboard-ppks">
             <h2 className=" text-5xl font-bold text-green-400 md:text-6xl lg:text-7xl lg:mb-4">
               Selamat Datang
