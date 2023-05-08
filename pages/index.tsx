@@ -28,20 +28,20 @@ export default function Home() {
         </style>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="py-10 mb-12 flex justify-between fixed font-poppins bg-transparent px-10 md:px -20 lg:px-40 dark:bg-black">
-          <ul className="flex items-center space-x-4">
-            <li>
-              <BsFillMoonStarsFill
-                className="cursor-pointer text-xl mx-5 text-green-400"
-                onClick={() => setdarkmode(!darkmode)}
-              />
-            </li>
-            <li className="text-green-400 ml-4"><a href="#dashboard-ppks">Dashboard</a></li>
-            <li className="text-green-400 ml-4"><a href="#chatbot-ppks">ChatBot</a></li>
-            <li className="text-green-400 ml-4"><a href="#about-ppks">Dasar Hukum</a></li>
-            <li className="text-green-400 ml-4"><a href="#news-ppks">Berita Terkait</a></li>
-          </ul>
-        </nav>
+      <nav className="py-4 px-6 mb-8 flex flex-col justify-between fixed w-full bg-transparent md:flex-row md:justify-between md:items-center">
+        <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
+          <li>
+            <BsFillMoonStarsFill
+              className="cursor-pointer text-xl text-green-400"
+              onClick={() => setdarkmode(!darkmode)}
+            />
+          </li>
+          <li className="text-green-400"><a href="#dashboard-ppks">Dashboard</a></li>
+          <li className="text-green-400"><a href="#chatbot-ppks">ChatBot</a></li>
+          <li className="text-green-400"><a href="#about-ppks">Dasar Hukum</a></li>
+          <li className="text-green-400"><a href="#news-ppks">Berita Terkait</a></li>
+        </ul>
+      </nav>
       <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
         <section className="min-h-screen">
           <div className="text-center p-10 " id="dashboard-ppks">
