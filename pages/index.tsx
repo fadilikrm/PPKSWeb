@@ -17,6 +17,11 @@ import { useState} from "react";
 export default function Home() {
   // functions
   const [darkmode, setdarkmode] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const Navbar = () => {
+  function toggleDropdown() {
+      setDropdownOpen(!dropdownOpen);
+    }
   return (
     <div className={darkmode ? "dark" : ""}>
       <div>
@@ -27,21 +32,33 @@ export default function Home() {
         @import url(&apos;https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap&apos;);
         </style>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
       </Head>
       <nav className="py-4 px-6 mb-8 flex flex-col justify-between fixed w-full bg-transparent md:flex-row md:justify-between md:items-center">
-        <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
-          <li>
-            <BsFillMoonStarsFill
-              className="cursor-pointer text-xl text-green-400"
-              onClick={() => setdarkmode(!darkmode)}
-            />
-          </li>
-          <li className="text-green-400"><a href="#dashboard-ppks">Dashboard</a></li>
-          <li className="text-green-400"><a href="#chatbot-ppks">ChatBot</a></li>
-          <li className="text-green-400"><a href="#about-ppks">Dasar Hukum</a></li>
-          <li className="text-green-400"><a href="#news-ppks">Berita Terkait</a></li>
-        </ul>
-      </nav>
+      <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
+        <li>
+          <BsFillMoonStarsFill
+            className="cursor-pointer text-xl text-green-400"
+            onClick={() => setdarkmode(!darkmode)}
+          />
+        </li>
+        <li className="text-green-400"><a href="#dashboard-ppks">Dashboard</a></li>
+        <li className="text-green-400"><a href="#chatbot-ppks">ChatBot</a></li>
+        <li className="text-green-400 relative">
+          <a href="#about-ppks" onClick={toggleDropdown}>
+            Dasar Hukum
+          </a>
+          {dropdownOpen && (
+            <ul className="absolute left-0 mt-2 py-2 px-4 bg-white text-green-400 rounded-md shadow-md">
+              <li><a href="#about-ppks-sub1">Submenu 1</a></li>
+              <li><a href="#about-ppks-sub2">Submenu 2</a></li>
+              <li><a href="#about-ppks-sub3">Submenu 3</a></li>
+            </ul>
+          )}
+        </li>
+        <li className="text-green-400"><a href="#news-ppks">Berita Terkait</a></li>
+      </ul>
+    </nav>
       <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
         <section className="min-h-screen">
           <div className="text-center p-10 " id="dashboard-ppks">
@@ -74,44 +91,40 @@ export default function Home() {
           <br />
           <div className="text-gray-400 text-center container">
               Kami memiliki chatbot yang bisa digunakan untuk mendukung program PPKS dan memiliki berbagai fitur yang
-              dapat membantu anda dalam berbagai masalah yang berhubungan dengan PPKS. Bot ini memiliki jam kerja operasional dan tidak 24 jam aktif. Maka dari itu mohon dipakai pada jam kerja operasionalnya 
+              dapat membantu anda dalam berbagai masalah yang berhubungan dengan PPKS.
             </div>
             <br />
           <div className="font-bold text-green-400 text-center container">
             Silahkan Klik Icon Whatsapp atau Telegram diatas Untuk Menggunakan Chatbot PPKS
             </div>
-          <div className="md:flex lg:flex gap-10 mx-auto">
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 bg-green-400">
+          <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
+            <div className="shadow-lg p-5 rounded-xl my-10 bg-green-400 basis-1/3 flex-1">
             <Image  
                 src={p4}
-                width={500}
-                height={500}
                 alt="design"
-                className=" inline py-5"
+                className=" rounded-lg object-cover w-full h-full"
+                layout="responsive"
             />
             <ul>
-            <li className="text-sm py-2 text-dark-400 leading-6 text-center">Ini adalah Bot Whatsapp yang telah kami buat, terdapat berbagai fitur seperti yang ada pada gambar.</li>
-            <li className=" font-bold text-sm py-2 text-dark-400 leading-6 text-center">Untuk Memulai dan Menjalankan Kembali Bot Dari Awal Anda Bisa Mengetik Hi atau Halo Pada Bot Tersebut.</li>
+            <li className="text-sm py-2 text-dark-400 leading-6 text-center">Ini adalah Bot Whatsapp yang telah kami buat, terdapat berbagai fitur seperti yang ada pada gambar. <b>Untuk Memulai dan Menjalankan Kembali Bot Dari Awal Anda Bisa Mengetik Hi atau Halo Pada Bot Tersebut.</b></li>
             </ul>
             </div>
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 bg-green-400">
+            <div className="shadow-lg p-5 rounded-xl my-10 basis-1/3 flex-1 bg-green-400">
             <Image  
                 src={p4}
-                width={500}
-                height={500}
                 alt="design"
-                className=" inline py-5"
+                className=" rounded-lg object-cover w-full h-full"
+                layout="responsive"
             />
               <ul>
-            <li className="text-sm py-2 text-dark-400 leading-6 text-center">Ini adalah Bot Telegram yang telah kami buat, terdapat berbagai fitur seperti yang ada pada gambar</li>
-            <li className=" font-bold text-sm py-2 text-dark-400 leading-6 text-center">Untuk Memulai dan Menjalankan Kembali Bot Dari Awal Anda Bisa Mengetik Hi atau Halo Pada Bot Tersebut.</li>
+            <li className="text-sm py-2 text-dark-400 leading-6 text-center">Ini adalah Bot Telegram yang telah kami buat, terdapat berbagai fitur seperti yang ada pada gambar. <b>Untuk Memulai dan Menjalankan Kembali Bot Dari Awal Anda Bisa Mengetik Hi atau Halo Pada Bot Tersebut.</b></li>
             </ul>
             </div>
           </div>
         </section>
 
         {/* last section */}
-        <section>
+        <section className="min-h-screen">
           <div className="text-center p-5" id="about-ppks">
             <h3 className="  font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
               Dasar Hukum PPKS 
@@ -136,15 +149,14 @@ export default function Home() {
             </ul>
           </div>
           </section>
-          <section>
+          <section className="min-h-screen">
           <div className="text-center p-5" id="news-ppks">
           <h3 className="font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
             Berita Terkait
           </h3>
-          <br />
           {/* images */}
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
-          <div className="basis-1/3 flex-1">
+          <div className="shadow-lg p-5 rounded-xl my-10 basis-1/3 flex-1">
               <a href="https://merdekadarikekerasan.kemdikbud.go.id/kekerasan-seksual/"><Image
                 src={web9}
                 alt="web images"
@@ -155,7 +167,7 @@ export default function Home() {
             <li className="text-sm py-2 text-gray-400 leading-6 text-center">Apa itu Kekerasan Seksual? Cari tau informasi mengenai kekerasan seksual disini</li>
             </ul>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="shadow-lg p-5 rounded-xl my-10 basis-1/3 flex-1">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSczG1YebRSp_APCUiH5VIfyZrF7IgE-d_GZFEp9KiSdcjmRnA/viewform"><Image
                 src={web7}
                 alt="web images"
@@ -167,7 +179,7 @@ export default function Home() {
             Perguruan Tinggi (Jika berkenan, anda bisa mengisi survey ini)</li>
             </ul>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="shadow-lg p-5 rounded-xl my-10 basis-1/3 flex-1">
               <a href="https://merdekadarikekerasan.kemdikbud.go.id/pencegahan/#"><Image
                 src={web8}
                 alt="web images"
@@ -178,7 +190,7 @@ export default function Home() {
             <li className="text-sm py-2 text-gray-400 leading-6 text-center">Pencegahan dan Penanganan Kekerasan Seksual (Terdapat Berbagai cara yang dapat dilakukan untuk mencegah dan menangani kekerasan seksual, anda bisa melihatnya disini)</li>
             </ul>
             </div>
-            <div className="basis-1/3 flex-1">
+            <div className="shadow-lg p-5 rounded-xl my-10 basis-1/3 flex-1">
               <a href="https://merdekadarikekerasan.kemdikbud.go.id/peraturan/#"><Image
                 src={web10}
                 alt="web images"
@@ -196,4 +208,5 @@ export default function Home() {
     </div>
     </div>
   );
+  }
 }
