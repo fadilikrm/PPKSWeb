@@ -29,7 +29,9 @@ export default function Home() {
         </style>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="py-4 px-6 mb-8 flex flex-col justify-between w-full bg-transparent md:flex-row md:justify-between md:items-center">
+      <main className="font-poppins bg-white px-10 md:px-20 lg:px-40 dark:bg-black">
+        <section className="min-h-screen">
+        <nav className="py-4 px-6 mb-8 flex flex-col justify-between w-full md:flex-row md:justify-between md:items-center">
         <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
           <li>
             <BsFillMoonStarsFill
@@ -43,8 +45,6 @@ export default function Home() {
           <li className="text-green-400"><a href="#news-ppks">Berita Terkait</a></li>
         </ul>
       </nav>
-      <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
-        <section className="min-h-screen">
           <div className="text-center p-10 " id="dashboard-ppks">
             <h2 className=" text-5xl font-bold text-green-400 md:text-6xl lg:text-7xl lg:mb-4">
               Selamat Datang
@@ -52,7 +52,7 @@ export default function Home() {
             <h3 className="text-2xl py-4 md:text-3xl dark:text-white">
               Website Pencegahan dan Penanggulangan Kekerasan Seksual
             </h3>
-            <p className=" text-2x1 py-4 text-gray-400 leading-6 md:text-3x1 text-center">
+            <p className=" text-2x1 py-4 text-gray-400 leading-6 md:text-3x1 text-justify">
               Selamat datang di situs kami yang berfokus pada Pencegahan dan Penanggulangan Kekerasan Seksual. Kami hadir untuk menyebarkan kesadaran, memberikan informasi, dan menyediakan sumber daya tentang pentingnya mencegah kekerasan seksual.
               Di sini, Anda akan menemukan informasi tentang definisi kekerasan seksual, tanda-tanda peringatan, dampaknya, serta langkah-langkah praktis dalam merespons dan melindungi diri. Tujuan kami adalah membangun komunitas yang aman dan peduli, serta memberikan dukungan kepada mereka yang terkena dampak kekerasan seksual.
               Bersama-sama, kita dapat menciptakan dunia yang bebas dari kekerasan seksual. Data anda dapat dijamin keamanannya. jangan ragu dan bimbang, bergabunglah dengan kami dalam upaya ini dan mari bersama-sama mencegah kekerasan seksual serta mendukung korban yang membutuhkan.
