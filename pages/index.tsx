@@ -50,7 +50,7 @@ export default function Home() {
               <p className=" text-2x1 py-4 text-gray-400 leading-6 md:text-3x1 text-center">
               Tujuan kami adalah membangun komunitas yang aman dan peduli, serta memberikan dukungan kepada mereka yang terkena dampak kekerasan seksual.</p>
               <p className=" text-2x1 py-4 text-gray-400 leading-6 md:text-3x1 text-center">
-              Bersama-sama, kita dapat menciptakan dunia yang bebas dari kekerasan seksual. <b>Data anda dapat dijamin keamanannya</b>. jangan ragu dan bimbang, bergabunglah dengan kami dalam upaya ini dan mari bersama-sama mencegah kekerasan seksual serta mendukung korban yang membutuhkan.
+              Bersama-sama, kita dapat menciptakan dunia yang bebas dari kekerasan seksual. <b>Data anda dijamin keamanannya</b>. jangan ragu dan bimbang, bergabunglah dengan kami dalam upaya ini dan mari bersama-sama mencegah kekerasan seksual serta mendukung korban yang membutuhkan.
               Terima kasih telah mengunjungi situs kami.
             </p>
           </div>
