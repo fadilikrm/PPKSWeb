@@ -37,7 +37,7 @@ const Navbar = () => {
                         <a className="flex-shrink-0 pl-4 text-gray-900" href="#dashboard-ppks">Dashboard</a>
                         <a className="flex-shrink-0 pl-4 text-gray-900" href="#chatbot-ppks">Chatbot</a>
                         <a className="flex-shrink-0 pl-4 text-gray-900" href="#about-ppks">Dasar Hukum</a>
-                        <a className="flex-shrink-0 pl-4 text-gray-900" href="#news-ppks">Berita Terkait</a>
+                        <a className="flex-shrink-0 pr-4 pl-4 text-gray-900" href="#news-ppks">Berita Terkait</a>
                     </nav>
                 </div>
             </header>
