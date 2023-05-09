@@ -105,10 +105,7 @@ export default function Home() {
             </ul>
             </div>
           </div>
-        </section>
-
         {/* last section */}
-        <section className="min-h-screen">
           <div className="text-center p-5" id="about-ppks">
             <h3 className="  font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
               Dasar Hukum PPKS 
@@ -132,8 +129,6 @@ export default function Home() {
             Perlu dicatat bahwa daftar ini tidak lengkap dan masih banyak peraturan hukum lainnya yang terkait dengan pencegahan dan penanggulangan kekerasan seksual di Indonesia. Sebaiknya selalu merujuk pada undang-undang dan peraturan terkait yang terbaru dan memperhatikan perkembangan terkini dalam hal ini. </li>
             </ul>
           </div>
-          </section>
-          <section className="min-h-screen">
           <div className="text-center p-5" id="news-ppks">
           <h3 className="font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
             Berita Terkait
