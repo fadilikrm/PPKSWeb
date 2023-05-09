@@ -52,7 +52,7 @@ export default function Home() {
             <h3 className="text-2xl py-4 md:text-3xl dark:text-white">
               Website Pencegahan dan Penanggulangan Kekerasan Seksual
             </h3>
-            <p className=" text-2x1 py-4 text-gray-400 leading-6 md:text-3x1 text-justify">
+            <p className=" text-2x1 py-4 text-gray-400 leading-6 md:text-3x1 text-center">
               Selamat datang di situs kami yang berfokus pada Pencegahan dan Penanggulangan Kekerasan Seksual. Kami hadir untuk menyebarkan kesadaran, memberikan informasi, dan menyediakan sumber daya tentang pentingnya mencegah kekerasan seksual.
               Di sini, Anda akan menemukan informasi tentang definisi kekerasan seksual, tanda-tanda peringatan, dampaknya, serta langkah-langkah praktis dalam merespons dan melindungi diri. Tujuan kami adalah membangun komunitas yang aman dan peduli, serta memberikan dukungan kepada mereka yang terkena dampak kekerasan seksual.
               Bersama-sama, kita dapat menciptakan dunia yang bebas dari kekerasan seksual. Data anda dapat dijamin keamanannya. jangan ragu dan bimbang, bergabunglah dengan kami dalam upaya ini dan mari bersama-sama mencegah kekerasan seksual serta mendukung korban yang membutuhkan.
