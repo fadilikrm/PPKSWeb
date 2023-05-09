@@ -16,7 +16,7 @@ const Navbar = () => {
         <>
             <header aria-label="Site Header"
         className="shadow-sm bg-white fixed top-0 left-0 right-0 z-50">
-                <div className="mx-auto flex h-8 max-w-screen-xl items-center justify-between px-4">
+                <div className="mx-auto flex h-6 max-w-screen-xl items-center justify-between px-4">
                     <nav aria-label="Site Nav" className="hidden items-center justify-center gap-3 text-sm font-medium lg:flex lg:w-0 lg:flex-1">
                         <a className="text-gray-900" href><BsFillMoonStarsFill
             className={`cursor-pointer text-xl ${darkmode ? 'text-green-400' : 'text-green-400'}`}
