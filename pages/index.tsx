@@ -8,6 +8,7 @@ import NavBar from "../components/NavBar";
 // images
 import Image from "next/image";
 import p4 from "../public/p4.png";
+import p5 from "../public/p5.png";
 import web8 from "../public/web8.png";
 import web7 from "../public/web7.png";
 import web9 from "../public/web9.png";
@@ -32,16 +33,11 @@ export default function Home() {
       </Head>
       <NavBar/>
       <br />
-      <br />
-      <br />
-      <br />
       <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
         <section className="min-h-screen">
           <div className="text-center p-10 " id="dashboard-ppks">
             <div>
               <br />
-              <br />
-            <br />
             <h2 className=" text-5xl font-bold text-green-400 md:text-6xl lg:text-7xl lg:mb-4">
               Selamat Datang
             </h2>
@@ -59,8 +55,6 @@ export default function Home() {
           <div className="text-center p-5" id="chatbot-ppks">
             <br />
             <br />
-            <br />
-            <br />
             <h3 className=" font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
             CHATBOT
             </h3>
@@ -69,7 +63,7 @@ export default function Home() {
             <a href="https://wa.me/+6282292461749">
             <FaWhatsapp />
             </a>
-            <a href="https://t.me/your_telegram_username">
+            <a href="http://t.me/satgasPPKS_bot">
             <FaTelegram />
             </a>
           </div>
@@ -96,21 +90,19 @@ export default function Home() {
             </div>
             <div className="shadow-lg p-5 rounded-xl my-10 basis-1/3 flex-1 bg-green-400">
             <Image  
-                src={p4}
+                src={p5}
                 alt="design"
                 className=" rounded-lg object-cover w-full h-full"
                 layout="responsive"
             />
               <ul>
-            <li className="text-sm py-2 text-dark-400 leading-6 text-center">Ini adalah Bot Telegram yang telah kami buat, terdapat berbagai fitur seperti yang ada pada gambar. <b>Untuk Memulai dan Menjalankan Kembali Bot Dari Awal Anda Bisa Mengetik Hi atau Halo Pada Bot Tersebut.</b></li>
+            <li className="text-sm py-2 text-dark-400 leading-6 text-center">Ini adalah Bot Telegram yang telah kami buat, terdapat berbagai fitur seperti yang ada pada gambar. <b>Untuk Memulai dan Menjalankan Kembali Bot Dari Awal Anda Bisa klik Start Pada Bot Tersebut.</b></li>
             </ul>
             </div>
           </div>
         {/* last section */}
           <div className="text-center p-5" id="about-ppks">
           <br />
-            <br />
-            <br />
             <br />
             <h3 className="  font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
               Dasar Hukum PPKS 
@@ -135,10 +127,6 @@ export default function Home() {
             </ul>
           </div>
           <div className="text-center p-5" id="news-ppks">
-          <br />
-            <br />
-            <br />
-            <br />
           <h3 className="font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
             Berita Terkait
           </h3>

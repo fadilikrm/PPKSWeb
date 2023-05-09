@@ -16,8 +16,8 @@ const Navbar = () => {
         <>
             <header aria-label="Site Header"
         className="shadow-sm bg-white fixed top-0 left-0 right-0 z-50">
-                <div className="mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4">
-                    <nav aria-label="Site Nav" className="hidden items-center justify-center gap-8 text-sm font-medium lg:flex lg:w-0 lg:flex-1">
+                <div className="mx-auto flex h-8 max-w-screen-xl items-center justify-between px-4">
+                    <nav aria-label="Site Nav" className="hidden items-center justify-center gap-3 text-sm font-medium lg:flex lg:w-0 lg:flex-1">
                         <a className="text-gray-900" href><BsFillMoonStarsFill
             className={`cursor-pointer text-xl ${darkmode ? 'text-green-400' : 'text-green-400'}`}
             onClick={toggleDarkMode}
@@ -28,7 +28,7 @@ const Navbar = () => {
                         <a className="text-gray-900" href="#news-ppks">Berita Terkait</a>
                     </nav>
                 </div>
-                <div className="border-t border-gray-100 lg:hidden">
+                <div className="lg:hidden">
                     <nav className="flex items-center justify-center overflow-x-auto p-4 text-sm font-medium">
                         <a className="flex-shrink-0 pl-4 text-gray-900" href><BsFillMoonStarsFill
             className={`cursor-pointer text-xl ${darkmode ? 'text-green-400' : 'text-green-400'}`}
