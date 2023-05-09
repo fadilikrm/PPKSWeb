@@ -30,10 +30,18 @@ export default function Home() {
         </style>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NavBar/>
+      <br />
+      <br />
+      <br />
+      <br />
       <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
         <section className="min-h-screen">
-        <NavBar/>
           <div className="text-center p-10 " id="dashboard-ppks">
+            <div>
+              <br />
+              <br />
+            <br />
             <h2 className=" text-5xl font-bold text-green-400 md:text-6xl lg:text-7xl lg:mb-4">
               Selamat Datang
             </h2>
@@ -47,7 +55,12 @@ export default function Home() {
               Terima kasih telah mengunjungi situs kami.
             </p>
           </div>
+          </div>
           <div className="text-center p-5" id="chatbot-ppks">
+            <br />
+            <br />
+            <br />
+            <br />
             <h3 className=" font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
             CHATBOT
             </h3>
@@ -95,6 +108,10 @@ export default function Home() {
           </div>
         {/* last section */}
           <div className="text-center p-5" id="about-ppks">
+          <br />
+            <br />
+            <br />
+            <br />
             <h3 className="  font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
               Dasar Hukum PPKS 
             </h3>
@@ -118,6 +135,10 @@ export default function Home() {
             </ul>
           </div>
           <div className="text-center p-5" id="news-ppks">
+          <br />
+            <br />
+            <br />
+            <br />
           <h3 className="font-bold text-green-400 md:text-2xl lg:text-4xl lg:mb-4">
             Berita Terkait
           </h3>
