@@ -2,6 +2,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaTelegram, FaWhatsapp } from 'react-icons/fa';
+import NavBar from "../components/NavBar";
 
 
 // images
@@ -29,22 +30,9 @@ export default function Home() {
         </style>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="py-4 px-6 mb-8 flex flex-col justify-between fixed w-full bg-transparent md:flex-row md:justify-between md:items-center">
-        <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
-          <li>
-            <BsFillMoonStarsFill
-              className="cursor-pointer text-xl text-green-400"
-              onClick={() => setdarkmode(!darkmode)}
-            />
-          </li>
-          <li className="text-green-400"><a href="#dashboard-ppks">Dashboard</a></li>
-          <li className="text-green-400"><a href="#chatbot-ppks">ChatBot</a></li>
-          <li className="text-green-400"><a href="#about-ppks">Dasar Hukum</a></li>
-          <li className="text-green-400"><a href="#news-ppks">Berita Terkait</a></li>
-        </ul>
-      </nav>
       <main className="font-poppins bg-white px-10 md:px -20 lg:px-40 dark:bg-black">
         <section className="min-h-screen">
+        <NavBar/>
           <div className="text-center p-10 " id="dashboard-ppks">
             <h2 className=" text-5xl font-bold text-green-400 md:text-6xl lg:text-7xl lg:mb-4">
               Selamat Datang
