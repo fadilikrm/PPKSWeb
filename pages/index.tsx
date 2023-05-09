@@ -29,7 +29,7 @@ export default function Home() {
         </style>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className="py-4 px-6 mb-8 flex flex-col justify-between fixed w-full bg-transparent md:flex-row md:justify-between md:items-center">
+      <nav className="py-4 px-6 mb-8 flex flex-col justify-between w-full bg-transparent md:flex-row md:justify-between md:items-center">
         <ul className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
           <li>
             <BsFillMoonStarsFill
