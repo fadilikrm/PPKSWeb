@@ -63,7 +63,7 @@ export default function Home() {
             </h3>
           </div>
           <div className="text-5xl flex justify-center gap-16 text-gray-400">
-            <a href="https://wa.me/+6282292461749">
+            <a href="https://wa.me/+6281524166607">
             <FaWhatsapp />
             </a>
             <a href="http://t.me/satgasPPKS_bot">
